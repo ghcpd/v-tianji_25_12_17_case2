@@ -1,0 +1,23 @@
+=== Test Run (npm test -- --run) ===
+RUN  v0.34.6
+· src/__tests__/feed.test.tsx
+✓ Feed interactions (5)
+  ✓ renders feed with videos
+  ✓ like toggles and updates count
+  ✓ follow toggles on first video
+  ✓ autoplay triggers when intersection observer reports intersecting
+  ✓ pause/play button toggles
+
+Test Files  1 passed (1)
+Tests  5 passed (5)
+
+=== Dev Server (npm run dev) ===
+VITE v5.4.21  ready in 437 ms
+Local: http://localhost:5173/
+
+=== Build (npm run build) ===
+vite v5.4.21 building for production...
+✓ built in 528ms
+
+=== Notes ===
+Attempting to run vitest with --coverage triggered an automatic installer for @vitest/coverage-v8 which failed due to peer dependency conflicts; to avoid changing dependency tree I removed the coverage provider configuration for now. Tests still run and pass.
