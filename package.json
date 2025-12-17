@@ -1,0 +1,15 @@
+{
+  "name": "short-video-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Short-Video Browsing Web UI Generation & Full Test Execution",
+  "scripts": {
+    "start-server": "node server.js",
+    "test": "node ./tests/runAll.js"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {}
+}
