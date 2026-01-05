@@ -1,0 +1,27 @@
+{
+  "name": "short-video-app",
+  "version": "1.0.0",
+  "description": "TikTok-style short-video browsing interface",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^14.1.2",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.0.4",
+    "jsdom": "^23.0.1",
+    "vite": "^5.0.8",
+    "vitest": "^1.0.4"
+  }
+}
