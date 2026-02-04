@@ -1,0 +1,24 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#95a0b8;
+  --accent:#ff0057;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,var(--bg),#031024); color:#fff}
+
+.app{height:100vh;display:flex;flex-direction:column}
+.header{height:56px;display:flex;align-items:center;padding:0 16px;gap:12px}
+
+.feed{height:calc(100vh - 56px);overflow-y:auto;scroll-snap-type:y mandatory}
+.videoCard{height:calc(100vh - 56px);position:relative;display:flex;align-items:flex-end;justify-content:center;padding:24px;scroll-snap-align:center}
+.videoCard video{width:400px;max-width:92%;height:auto;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.controls{position:absolute;right:20px;bottom:80px;display:flex;flex-direction:column;gap:18px;align-items:center}
+.icon{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:18px}
+.like{color:var(--accent)}
+.meta{position:absolute;left:20px;bottom:36px}
+.username{font-weight:600}
+.desc{color:var(--muted);margin-top:6px}
+.follow{margin-left:10px;background:linear-gradient(90deg,#ff0057,#ff7aa2);padding:6px 10px;border-radius:20px;font-weight:600;color:#000}
+.pauseOverlay{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);font-size:36px;background:rgba(0,0,0,0.35);padding:12px;border-radius:50%}
